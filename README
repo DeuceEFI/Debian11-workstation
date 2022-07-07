@@ -11,3 +11,8 @@ To install 32-bit libraries, open Terminal and type:
     sudo apt update
 
 and lastly, restart your computer.
+
+Megasquirt compiler
+http://www.msextra.com/tools/s12buildtools-linux32bit-2012-10-24.tar.gz
+
+
