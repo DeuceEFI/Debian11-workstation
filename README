@@ -1,0 +1,13 @@
+Debian 11 Workstation Setup
+
+Install Debian 11
+
+Installing 32-bit libs on a 64-bit Debian Linux system
+
+To install 32-bit libraries, open Terminal and type:
+    sudo apt install lib32z1 
+	(you will need to enter your password).
+
+    sudo apt update
+
+and lastly, restart your computer.
