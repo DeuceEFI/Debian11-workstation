@@ -85,10 +85,16 @@ sudo apt install git
 Set your user information in the git config
 git config --global --edit
 
+-----
+
+Install wget
+
+sudo apt update
+sudo apt install wget
 
 -----
 
-Install custome Surface Linux kernel
+Install custom Surface Linux kernel
 https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
 
 First you need to import the keys we use to sign packages.
