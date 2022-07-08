@@ -206,5 +206,12 @@ Install Java JRE
 
      sudo apt install -y default-jre
 
+-----
+
+Install cutecom
+
+     sudo apt install cutecom
+
+
 
 
