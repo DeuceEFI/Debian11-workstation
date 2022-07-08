@@ -160,12 +160,6 @@ If it doesn't contain that string, you are still using the default kernel and ne
 
 -----
 
-Change Monitor Resolution
-
-
-
------
-
 Installing 32bit libs on a 64bit Debian Linux system
 This will allow you to run 32bit applications on your 64bit system.
 
