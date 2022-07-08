@@ -28,6 +28,30 @@ Exit out of Connman Settings
 
 -----
 
+Copy .ssh directory to your home directory
+
+Set permissions for config file
+chmod 655 config
+
+Set permissions for id_rsa file
+chmod 600 id_rsa
+
+Set permissions for id_rsa.pub file
+chmod 655 id_rsa.pub
+
+-----
+
+Install git
+
+sudo apt update
+sudo apt install git
+
+Set your user information in the git config
+git config --global --edit
+
+
+-----
+
 Install custome Surface Linux kernel
 https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
 
