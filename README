@@ -9,15 +9,15 @@ Change Grub Resolution
 
 Open a Terminal session
 
-sudo nano /etc/default/grub
+      sudo nano /etc/default/grub
 
 Find the line: 
 
-#GRUB_GFXMODE=640x480
+     #GRUB_GFXMODE=640x480
 
 Uncomment it and change it to:
 
-GRUB_GFXMODE=800x600
+     GRUB_GFXMODE=800x600
 
 Save the file and exit.
 
@@ -40,13 +40,13 @@ Change LXDE Login Screen Resolution
 
 Open a Terminal session
 
-sudo mousepad /etc/lightdm/lightdm.conf
+     sudo mousepad /etc/lightdm/lightdm.conf
 
 Uncomment the following lines and add the xrandr options:
 
-display-setup-script=xrandr --output eDP-1 --mode 1440x900
+     display-setup-script=xrandr --output eDP-1 --mode 1440x900
 
-greeter-setup-script=xrandr --output eDP-1 --mode 1440x900
+     greeter-setup-script=xrandr --output eDP-1 --mode 1440x900
 
 Save the file and reboot to test.
 
@@ -67,59 +67,59 @@ Exit out of Connman Settings
 Copy .ssh directory to your home directory
 
 Set permissions for config file
-chmod 655 config
+     chmod 655 config
 
 Set permissions for id_rsa file
-chmod 600 id_rsa
+     chmod 600 id_rsa
 
 Set permissions for id_rsa.pub file
-chmod 655 id_rsa.pub
+     chmod 655 id_rsa.pub
 
 -----
 
 Install git
 
-sudo apt update
-sudo apt install git
+     sudo apt update
+     sudo apt install git
 
 Set your user information in the git config
-git config --global --edit
+     git config --global --edit
 
 -----
 
 Install wget
 
-sudo apt update
-sudo apt install wget
+     sudo apt update
+     sudo apt install wget
 
 -----
 
 Install custom Surface Linux kernel
-https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
+     https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
 
 First you need to import the keys we use to sign packages.
 
-wget -qO - https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc \
-    | gpg --dearmor | sudo dd of=/etc/apt/trusted.gpg.d/linux-surface.gpg
+     wget -qO - https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc \
+     | gpg --dearmor | sudo dd of=/etc/apt/trusted.gpg.d/linux-surface.gpg
 
 After this you can add the repository configuration and update APT.
 
-echo "deb [arch=amd64] https://pkg.surfacelinux.com/debian release main" \
+     echo "deb [arch=amd64] https://pkg.surfacelinux.com/debian release main" \
 	| sudo tee /etc/apt/sources.list.d/linux-surface.list
 
-sudo apt update
+     sudo apt update
 
 Now you can install the linux-surface kernel and its dependencies. 
 You should also enable the iptsd service for touchscreen support.
 
-sudo apt install linux-image-surface linux-headers-surface iptsd libwacom-surface
-sudo systemctl enable iptsd
+     sudo apt install linux-image-surface linux-headers-surface iptsd libwacom-surface
+     sudo systemctl enable iptsd
 
 After that you can install our secureboot key. 
 This will import the key that the linux-surface kernel is signed with into your bootloader, so that the kernel is bootable without disabling secureboot. 
 This package will print instructions to the terminal, so please install it on its own, not as part of a bigger batch of packages.
 
-sudo apt install linux-surface-secureboot-mok
+     sudo apt install linux-surface-secureboot-mok
 
 If your Debian derivate does not support secure boot, please skip the last step.
 
@@ -144,16 +144,16 @@ The linux-surface kernel will be installed alongside the default kernel provided
 This way you have a backup kernel you can use if something goes wrong. 
 The bootloader will pick up the kernel by default, but you should update its configuration to make sure it was recognized.
 
-sudo update-grub
+     sudo update-grub
 
 Finally, reboot your system and you should boot into the linux-surface kernel. 
 Please make sure you are actually using the right kernel by checking if the output of
  
-uname -a 
+     uname -a 
 
 or
 
-uname -r
+     uname -r
 
 contains the string "surface". 
 If it doesn't contain that string, you are still using the default kernel and need to configure your bootloader.
@@ -164,10 +164,7 @@ Installing 32bit libs on a 64bit Debian Linux system
 This will allow you to run 32bit applications on your 64bit system.
 
 To install 32-bit libraries, open Terminal and type:
-    sudo apt install lib32z1 
-	(you will need to enter your password).
-
-    sudo apt update
+    sudo apt install lib32z1
 
 Restart your computer.
 
@@ -176,18 +173,18 @@ Restart your computer.
 Megasquirt compiler
 
 Download from:
-http://www.msextra.com/tools/s12buildtools-linux32bit-2012-10-24.tar.gz
+     http://www.msextra.com/tools/s12buildtools-linux32bit-2012-10-24.tar.gz
 
-Install
-sudo su
-cd /
-tar xfz /home/<userID>/Downloads/s12buildtools-linux32bit-2012-10-24/tools.tar.gz
-exit
+Install the compiler:
+     sudo su
+     cd /
+     tar xfz /home/<userID>/Downloads/s12buildtools-linux32bit-2012-10-24/tools.tar.gz
+     exit
 
 -----
 
 Megasquirt 3 source code
-https://www.msextra.com/downloads/dev/ms3/
+     https://www.msextra.com/downloads/dev/ms3/
 
 Extract the downloaded ms3-source zip file.
 cd into the ms3 directory and run 'make' to see if the 32bit compiler works.
