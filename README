@@ -189,5 +189,22 @@ Megasquirt 3 source code
 Extract the downloaded ms3-source zip file.
 cd into the ms3 directory and run 'make' to see if the 32bit compiler works.
 
+-----
+
+TunerStudioMS
+http://www.tunerstudio.com/index.php/downloads
+
+Extract the .tar.gz file
+cd into the TunerStudioMS directory and run
+     sudo ./TunerStudio.sh
+
+TunerStudioMS needs to run as root to be able to access the USB port unless you change the permissions on the USB device.
+
+-----
+
+Install Java JRE
+
+     sudo apt install -y default-jre
+
 
 
