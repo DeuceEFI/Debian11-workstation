@@ -5,6 +5,18 @@ Install Debian 11
 
 -----
 
+Setup WiFi
+
+Click on LXDE menu button
+Point at Preferences, click on Connman Settings
+Enable WiFi
+Select your WiFi SysID and enter passphrase
+Edit your WiFi SysID connection and enable Autoconnect
+Click Apply button
+Exit out of Connman Settings
+
+-----
+
 Install custome Surface Linux kernel
 https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
 
@@ -51,6 +63,12 @@ uname -r
 
 contains the string "surface". 
 If it doesn't contain that string, you are still using the default kernel and need to configure your bootloader.
+
+-----
+
+Change Monitor Resolution
+
+
 
 -----
 
