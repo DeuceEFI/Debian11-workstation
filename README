@@ -16,6 +16,21 @@ Click Save button
 
 -----
 
+Change LXDE Login Screen Resolution
+
+Open a Terminal session
+sudo mousepad /etc/lightdm/lightdm.conf
+
+Uncomment the following lines and add the xrandr options:
+
+display-setup-script=xrandr --output eDP-1 --mode 1440x900
+
+greeter-setup-script=xrandr --output eDP-1 --mode 1440x900
+
+Save the file and reboot to test.
+
+-----
+
 Setup WiFi
 
 Click on LXDE menu button
