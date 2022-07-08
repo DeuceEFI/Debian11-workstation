@@ -182,10 +182,15 @@ Install
 sudo su
 cd /
 tar xfz /home/<userID>/Downloads/s12buildtools-linux32bit-2012-10-24/tools.tar.gz
+exit
 
 -----
 
 Megasquirt 3 source code
 https://www.msextra.com/downloads/dev/ms3/
+
+Extract the downloaded ms3-source zip file.
+cd into the ms3 directory and run 'make' to see if the 32bit compiler works.
+
 
 
