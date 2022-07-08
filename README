@@ -5,6 +5,17 @@ Install Debian 11
 
 -----
 
+Change LXDE Desktop Resolution
+
+Click on the LXDE menu button
+Point at Preferences, click on Monitor Settings
+Change Resolution to: 1440x900
+Click Apply button
+Click Ok button
+Click Save button
+
+-----
+
 Setup WiFi
 
 Click on LXDE menu button
