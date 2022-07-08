@@ -123,6 +123,23 @@ sudo apt install linux-surface-secureboot-mok
 
 If your Debian derivate does not support secure boot, please skip the last step.
 
+The secure-boot certificate has been installed to
+
+    /usr/share/linux-surface-secureboot/surface.cer
+
+It will now be automatically enrolled for you and guarded with the password
+
+    surface
+
+To finish the enrollment process you need to reboot, where you will then be
+asked to enroll the certificate. During the import, you will be prompted for
+the password mentioned above. Please make sure that you are indeed adding
+the right key and confirm by entering 'surface'.
+
+Note that you can always manage your secure-boot keys, including the one
+just enrolled, from inside Linux via the 'mokutil' tool.
+
+
 The linux-surface kernel will be installed alongside the default kernel provided by the distribution. 
 This way you have a backup kernel you can use if something goes wrong. 
 The bootloader will pick up the kernel by default, but you should update its configuration to make sure it was recognized.
