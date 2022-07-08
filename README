@@ -5,6 +5,26 @@ Install Debian 11
 
 -----
 
+Change Grub Resolution
+
+Open a Terminal session
+
+sudo nano /etc/default/grub
+
+Find the line: 
+
+#GRUB_GFXMODE=640x480
+
+Uncomment it and change it to:
+
+GRUB_GFXMODE=800x600
+
+Save the file and exit.
+
+Reboot to test.
+
+-----
+
 Change LXDE Desktop Resolution
 
 Click on the LXDE menu button
@@ -19,6 +39,7 @@ Click Save button
 Change LXDE Login Screen Resolution
 
 Open a Terminal session
+
 sudo mousepad /etc/lightdm/lightdm.conf
 
 Uncomment the following lines and add the xrandr options:
