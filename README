@@ -198,7 +198,15 @@ Extract the .tar.gz file
 cd into the TunerStudioMS directory and run
      sudo ./TunerStudio.sh
 
+-----
+
 TunerStudioMS needs to run as root to be able to access the USB port unless you change the permissions on the USB device.
+
+To allow your user to have RW access to /dev/ttyUSBx
+     sudo nano /etc/group
+
+Find the entry for dialout and after the last colon add your userID.
+Save and exit nano.
 
 -----
 
