@@ -1,7 +1,7 @@
 Debian 11 Surface Pro 5 Workstation Setup
 -----------------------------------------
 
-Install Debian 11
+Install Debian 11 or Libuntu 20.04
 
 -----
 
@@ -9,7 +9,7 @@ Change Grub Resolution
 
 Open a Terminal session
 
-      sudo nano /etc/default/grub
+     sudo nano /etc/default/grub
 
 Find the line: 
 
@@ -107,7 +107,7 @@ First you need to import the keys we use to sign packages.
 After this you can add the repository configuration and update APT.
 
      echo "deb [arch=amd64] https://pkg.surfacelinux.com/debian release main" \
-	| sudo tee /etc/apt/sources.list.d/linux-surface.list
+	 | sudo tee /etc/apt/sources.list.d/linux-surface.list
 
      sudo apt update
 
