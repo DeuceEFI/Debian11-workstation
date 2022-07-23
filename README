@@ -193,6 +193,11 @@ cd into the ms3 directory and run 'make' to see if the 32bit compiler works.
 
 -----
 
+If 'make' is not installed then install 'make':
+	 sudo apt install make
+
+-----
+
 TunerStudioMS
 http://www.tunerstudio.com/index.php/downloads
 
