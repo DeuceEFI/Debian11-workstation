@@ -234,3 +234,8 @@ Install notepadqq
 	 sudo apt install notepadqq
 
 -----
+
+Install gcc
+	 sudo apt install gcc
+
+-----
