@@ -94,6 +94,8 @@ Install wget
 
 -----
 
+ONLY FOR Microsoft Surface Pro:
+
 Install custom Surface Linux kernel
      https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
 
@@ -220,6 +222,10 @@ Install cutecom
 
      sudo apt install cutecom
 
+-----
 
+Install notepadqq
 
+	 sudo apt install notepadqq
 
+-----
